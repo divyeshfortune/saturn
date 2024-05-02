@@ -1,0 +1,24 @@
+.pulse{
+    @apply relative bg-DarkPrimary w-[3.75rem] h-[3.75rem] rounded-full;
+}
+.round{
+    @apply absolute bg-inherit w-full h-full rounded-[100%] opacity-[0.8];
+    animation: pulsing 4s ease-in-out infinite;
+}
+.round:nth-of-type(1){
+    animation-delay: -1s;
+}
+.round:nth-of-type(2){
+    animation-delay: -2s;
+}
+.round:nth-of-type(3){
+    animation-delay: -3s;
+}
+
+@keyframes pulsing{
+    100% {
+        transform: scale(6);
+        opacity: 0;
+    }
+}
+
