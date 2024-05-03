@@ -25,6 +25,7 @@ module.exports = {
         SnowySky: "#F8FAFC",
         MistyBlue: "#A3BBD1",
         SkyMistBlue: "#AEC8DF",
+        MistySky: "#C1DCFF",
       },
       screens: {
         sm: "768px",

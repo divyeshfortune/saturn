@@ -35,7 +35,7 @@ html {
     @apply md:text-50 text-28 font-bold text-white dark:text-white;
   }
   h2{
-    @apply md:text-40 text-24 font-medium text-midnight_text dark:text-white;
+    @apply md:text-40 text-24 font-bold text-midnight_text dark:text-white;
   }
   h3{
     @apply md:text-28 text-18 font-medium text-white dark:text-white;

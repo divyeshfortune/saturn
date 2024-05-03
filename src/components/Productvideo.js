@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Productvideo = () => {
   return (
-    <section className="bg-secondary pb-0">
+    <section className="bg-secondary pb-0 relative z-[1]">
       <div className="container">
         <div className="">
           <div className="flex items-center justify-between">
