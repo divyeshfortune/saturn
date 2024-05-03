@@ -60,59 +60,17 @@ html {
   }
   /* Default Button CSS Start */
   .btn {
-    @apply leading-9 border border-solid rounded-md text-17 text-white no-underline box-border px-4 py-[0.3125rem];
-    transition: all 0.35s;
+    @apply relative border-0 z-[1] py-3 px-4 text-17 font-normal rounded-lg cursor-pointer no-underline bg-primary text-white before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47];
+    transition: 0.5s;
   }
-  /* Button Blue */
-  .btn_blue {
-    @apply relative border-transparent text-white;
+  /* White Button CSS Start */
+  .btn_white {
+    @apply relative border-0 z-[1] py-4 px-[2.4rem] text-17 font-normal rounded-lg cursor-pointer no-underline bg-white text-primary before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] hover:text-white;
+    transition: 0.5s;
   }
-  .btn_blue::before,
-  .btn_blue::after {
-    @apply h-full absolute top-0 content-[''];
-    transition: all 0.3s;
+  /* transparent Button CSS Start */
+  .btn_trans {
+    @apply relative z-[1] py-4 px-[0.6rem] text-17 font-normal rounded-lg cursor-pointer no-underline border border-solid border-white text-white before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] hover:text-white hover:border-transparent;
+    transition: 0.5s;
   }
-  .btn_blue::before {
-    @apply w-full left-0 rounded-md bg-primary -z-[1];
-  }
-  .btn_blue::after {
-    @apply w-0 left-1/2 border-t border-b border-solid border-transparent -translate-x-2/4 translate-y-0 z-[1];
-  }
-  .btn_blue:hover {
-    @apply text-primary;
-  }
-  .btn_blue:hover::before {
-    @apply scale-x-0 scale-y-100;
-  }
-  .btn_blue:hover::after {
-    @apply w-full border-primary;
-    transition-delay: 0.2s;
-  }
-
-  /* Button Transparent */
-  .btn_transparent {
-    @apply relative border-white text-white font-medium;
-  }
-  .btn_transparent::before,
-  .btn_transparent::after {
-    @apply h-full absolute top-0 content-[''];
-    transition: all 0.3s;
-  }
-  .btn_transparent::before {
-    @apply w-full left-0 rounded-md bg-primary -z-[1];
-  }
-  .btn_transparent::after {
-    @apply w-0 left-1/2 border-t border-b border-solid border-transparent -translate-x-2/4 translate-y-0 z-[1];
-  }
-  .btn_transparent:hover {
-    @apply text-primary bg-white;
-  }
-  .btn_transparent:hover::before {
-    @apply scale-x-0 scale-y-100;
-  }
-  .btn_transparent:hover::after {
-    @apply w-full;
-    transition-delay: 0.2s;
-  }
-    /* Default Button CSS End */
 }

@@ -15,7 +15,7 @@ const Hero = () => {
           <Pulse />
         </div>
         <div className="grid md:grid-cols-12 grid-cols-1 gap-[1.875rem] items-center">
-          <div className="col-span-5 md:-ml-[14.375rem] lg:-ml-[0] -ml-[-1.375rem] z-0">
+          <div className="col-span-5 xl:-ml-[14.375rem] -ml-[0] md:-ml-[1.375rem] z-0">
               <Image
                 src="/images/hero.jpg"
                 alt="Grow Performance"
@@ -27,7 +27,7 @@ const Hero = () => {
               ></Image>
           </div>
           <div className="col-span-1"></div>
-          <div className="max-w-[39.125rem] col-span-6 z-10">
+          <div className="max-w-[39.125rem] col-span-6 z-[1]">
             <h1 className="">Task Management AssistantYou Gonna Love</h1>
             <div className="py-6 pb-12">
               <p className="text-CrystalSky text-xl">
@@ -37,8 +37,8 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex sm:items-center items-start gap-4 sm:flex-row flex-col">
-              <Link href="#" className="btn">Get Started</Link>
-              <Link href="#" className="btn btn_transparent">Start 30 Days Trial</Link>
+              <Link href="#" className="btn_white">Get Started</Link>
+              <Link href="#" className="btn_trans">Start 30 Days Trial</Link>
             </div>
           </div>
         </div>

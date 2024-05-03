@@ -106,7 +106,7 @@ const Header = () => {
             </div>
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="#" className="btn_blue btn">
+            <Link href="#" className="btn">
               Buy Now
             </Link>
             <span
