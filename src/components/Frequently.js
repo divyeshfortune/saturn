@@ -11,8 +11,8 @@ const Frequently = () => {
           <p className="text-DeepOcean text-24 font-normal">
             sometimes chunks as necessary making this the first search
           </p>
-          <form className="search-container">
-            <div className="relative before:content-[''] before:absolute before:bg-[url('/icon/search.svg')] before:bg-no-repeat before:bg-contain before:inline-block before:w-[1.625rem] before:h-[1.625rem] before:right-0">
+          <form className="md:w-[48.125rem] w-full block my-0 mx-auto pt-[3.75rem]">
+            <div className="relative before:content-[''] before:absolute before:bg-[url('/icon/search.svg')] before:bg-no-repeat before:bg-contain before:inline-block before:w-[1.625rem] before:h-[1.625rem] before:right-0 before:cursor-pointer">
             <input
               type="text"
               id="search-bar"

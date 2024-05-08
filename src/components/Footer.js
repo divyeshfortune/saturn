@@ -7,14 +7,14 @@ const Footer = () => {
     <footer className="bg-midnight_text relative z-[1]">
       <div className="container">
         <div className="grid md:grid-cols-12 grid-cols-1 sm:grid-cols-8 gap-[1.875rem]">
-          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-8 pb-0">
+          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-0 border-r border-solid border-[#224767]">
             <h2 className="text-white pb-10">Ready to Get Started?</h2>
-            <Link href="#" className="btn inline-block">
+            <Link href="#" className="btn inline- hover:bg-DarkPrimary hover:shadow-none">
               Get Started
             </Link>
           </div>
 
-          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-8 pb-0">
+          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-0 border-r border-solid border-[#224767] pl-16">
             <span className="text-18 font-bold text-white pb-4 inline-block">
               Support
             </span>
@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-8 pb-2">
+          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-2 pl-16">
             <span className="text-18 font-bold text-white pb-4 inline-block">
               Subscribe Newsletter
             </span>
@@ -118,7 +118,7 @@ const Footer = () => {
                 placeholder="Email*"
                 className="p-[0.9375rem] text-base border-0 rounded-md outline-0 w-[calc(100%_-_137px)] flex"
               />
-              <button type="submit" className="btn newsletter-btn p-[0.625rem] text-17 font-medium bg-primary text-white border-none cursor-pointer rounded-[0px_6px_6px_0px] outline-0 text-center w-[8.5625rem]">
+              <button type="submit" className="btn newsletter-btn p-[0.625rem] text-17 font-medium bg-primary text-white border-none cursor-pointer rounded-[0px_6px_6px_0px] outline-0 text-center w-[8.5625rem] hover:bg-DarkPrimary hover:shadow-none">
                 Subscribe
               </button>
             </form>

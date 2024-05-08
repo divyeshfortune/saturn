@@ -8,7 +8,7 @@ const Growperfomance = () => {
       <div className="container">
         <div className="grid md:grid-cols-12 grid-cols-1 items-center md:gap-0 gap-6">
           <div className="md:col-span-5 col-span-6">
-            <h2 className="max-w-[18.75rem]">Real time visual on your now</h2>
+            <h2 className="max-w-[20rem]">Real time visual on your now</h2>
             <p className="text-DeepOcean pt-7 pb-14">
               Sometimes by accident, sometimes chunks as necessary making this
               the first true generator on the Internet. recently with desktop
@@ -20,7 +20,7 @@ const Growperfomance = () => {
             </Link>
           </div>
           <div className="col-span-1"></div>
-          <div className="col-span-6">
+          <div className="col-span-6 rounded-3xl overflow-hidden">
             <Image
               src="/images/growth.jpg"
               alt="Grow Performance"

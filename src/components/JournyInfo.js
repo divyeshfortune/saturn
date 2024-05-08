@@ -6,7 +6,7 @@ const JournyInfo = () => {
   return (
     <section className="bg-primary pb-0 relative">
       <div className="container">
-        <div className="absolute left-[37%] bottom-[20%]">
+        <div className="absolute left-[37%] bottom-[20%] lg:inline-block hidden">
           <Pulse/>
         </div>
         <div className="flex flex-wrap items-center overflow-hidden">
