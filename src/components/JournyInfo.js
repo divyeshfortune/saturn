@@ -1,12 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import Pulse from "./Pulse";
 
 const JournyInfo = () => {
   return (
-    <section className="bg-primary pb-0">
+    <section className="bg-primary pb-0 relative">
       <div className="container">
+        <div className="absolute left-[37%] bottom-[20%]">
+          <Pulse/>
+        </div>
         <div className="flex flex-wrap items-center overflow-hidden">
-          <div className="md:w-1/2 w-full md:-mb-10 mb-6">
+          <div className="md:w-1/2 w-full md:-mb-10 mb-6 z-[1]">
             <Image
               src="/images/journy.png"
               alt="logo"
