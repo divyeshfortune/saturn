@@ -4,37 +4,63 @@ import Link from "next/link";
 import PulseBig from '@/components/PulseBig'
 
 const PricingPackages = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState('Monthly');
 
-  const handleChange = () => {
-    setIsChecked((prevChecked) => !prevChecked);
+  const handleSwitchChange = (e) => {
+    setSelectedPlan(e.target.value);
+  };
+
+  // Define content for the <p> tag based on the selected plan
+  const renderContent = () => {
+    if (selectedPlan === "Monthly") {
+      return "Phasellus ut nibh sit amet libero tempor corper. Proin eu augue sit amet diam mattis lacinia.";
+    } else if (selectedPlan === "Yearly") {
+      return "Amet consectetur adipisicing elit. Atque numquam non, delectus eu augue sit amet optio dolor diam mattis lacinia.";
+    }
   };
 
   return (
-    <section className="relative">
-      <div className="absolute right-[10%] -top-[20%] z-0">
+    <section className="relative border-t border-solid border-stroke">
+      <div className="absolute right-[15%] -top-[20%] z-0 xl:inline-block hidden">
         <PulseBig />
       </div>
       <div className="container">
-        <div className="flex items-center -mx-4 gap-[1.875rem]">
-          <div className="flex flex-col w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-            <h2 className="text-center">Choose our pricing plans</h2>
-            <div className="toggle-wrapper">
-              <input
-                id="example"
-                className="toggle"
-                type="checkbox"
-                checked={isChecked}
-                onChange={handleChange}
-              />
-              <label htmlFor="example" className="toggle--label"></label>
-              <div className="foux-toggle"></div>
-              
-              <p className="pt-14 text-18 text-DeepOcean">{isChecked ? "Phasellus ut nibh sit amet libero tempor corper. Proin eu augue sit amet diam mattis lacinia." : "Amet consectetur adipisicing elit. Atque numquam non, delectus eu augue sit amet optio dolor diam mattis lacinia."}</p>
-            </div>
+        <div className="grid md:grid-cols-12 grid-cols-1 items-center md:-mx-4 mx-0 gap-[1.875rem] relative z-[1]">
+          <div className="col-span-3 mb-8 lg:mb-0">
+            <h2 className="text-start pb-[1.875rem] max-w-[15.625rem]">Choose our pricing plans</h2>
+            <div className="switches-container">
+                <input
+                  type="radio"
+                  id="switchMonthly"
+                  name="switchPlan"
+                  value="Monthly"
+                  checked={selectedPlan === "Monthly"}
+                  onChange={handleSwitchChange}
+                />
+                <input
+                  type="radio"
+                  id="switchYearly"
+                  name="switchPlan"
+                  value="Yearly"
+                  checked={selectedPlan === "Yearly"}
+                  onChange={handleSwitchChange}
+                />
+                <label htmlFor="switchMonthly">Monthly</label>
+                <label htmlFor="switchYearly">Yearly</label>
+                <div className="switch-wrapper">
+                  <div className="switch">
+                    <div>Monthly</div>
+                    <div>Yearly</div>
+                  </div>
+                </div>
+              </div>
+              <p className="mt-12 text-DeepOcean text-18">
+              {renderContent()}
+            </p>
           </div>
-          <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0 shadow-[0px_24px_60px_0px_rgba(59,75,104,0.2)] relative z-[1]">
-            <div className="flex flex-grow flex-col p-6 sm:p-8">
+          <div className="col-span-1"></div>
+          <div className="col-span-4 mb-8 lg:mb-0 shadow-[0px_24px_60px_0px_rgba(59,75,104,0.2)]">
+            <div className="flex flex-col p-6 sm:p-8">
               <div className="space-y-2 pb-2">
                 <span className="text-40 font-bold text-primary">
                   $39
@@ -210,7 +236,7 @@ const PricingPackages = () => {
               </Link>
             </div>
           </div>
-          <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0 shadow-[0px_24px_60px_0px_rgba(59,75,104,0.2)] bg-primary z-[1]">
+          <div className="col-span-4 mb-8 lg:mb-0 shadow-[0px_24px_60px_0px_rgba(59,75,104,0.2)] bg-primary">
             <div className="flex flex-grow flex-col p-6 sm:p-8">
               <div className="space-y-2 pb-2">
                 <span className="text-40 font-bold text-white">

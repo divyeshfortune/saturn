@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,12 +7,12 @@ const Productvideo = () => {
     <section className="bg-secondary pb-0 relative z-[1]">
       <div className="container">
         <div className="">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between">
             <div className="">
               <h2 className="max-w-[21.25rem]">How our product is working ?</h2>
             </div>
-            <div className="">
-              <p className="max-w-[34.3125rem] text-DeepOcean text-18">
+            <div>
+              <p className="max-w-[34.3125rem] text-DeepOcean text-18 lg:pb-0 pb-4">
                 Sometimes by accident, sometimes chunks as necessary making this
                 the first true generator on the Internet. recently with desktop
                 publishing software like Aldus PageMaker

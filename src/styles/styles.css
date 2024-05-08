@@ -24,7 +24,7 @@
 
 
 .pulsebig{
-    @apply relative bg-[#CBEFFF] w-[244px] h-[249px] rounded-full;
+    @apply relative bg-[#CBEFFF] w-[9rem] h-[9.3125rem] rounded-full;
 }
 .circal{
     @apply absolute bg-inherit w-full h-full rounded-[100%] opacity-[0.8];
@@ -46,36 +46,75 @@
         opacity: 0;
     }
 }
+  
+ .switches-container {
+    @apply w-[16rem] relative flex p-0 border border-solid border-stroke leading-[3rem] rounded-full;
+  }
+  .switches-container input {
+    @apply invisible absolute top-0;
+  }
+  .switches-container label {
+    @apply w-1/2 p-0 m-0 text-center cursor-pointer text-DeepOcean;
+  }
+  .switch-wrapper {
+    @apply absolute top-0 bottom-0 w-1/2 p-[0.15rem] z-[3];
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  .switch {
+    @apply rounded-[3rem] bg-primary h-full;
+  }
+  .switch div {
+    @apply w-full text-center opacity-0 block text-white absolute top-0 left-0;
+    transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1) 0.125s;
+    will-change: opacity;
+  }
+  .switches-container input:nth-of-type(1):checked ~ .switch-wrapper {
+    @apply translate-x-0;
+  }
+  /* slide the switch box from left to right */
+  .switches-container input:nth-of-type(2):checked ~ .switch-wrapper {
+    @apply translate-x-full;
+  }
+  /* toggle the switch box labels - first checkbox:checked - show first switch div */
+  .switches-container
+    input:nth-of-type(1):checked
+    ~ .switch-wrapper
+    .switch
+    div:nth-of-type(1) {
+    @apply opacity-100;
+  }
+  /* toggle the switch box labels - second checkbox:checked - show second switch div */
+  .switches-container
+    input:nth-of-type(2):checked
+    ~ .switch-wrapper
+    .switch
+    div:nth-of-type(2) {
+      @apply opacity-100;
+  }
 
-
-.toggle-wrapper {
-    @apply relative w-[11.25rem] h-[10.8125rem] mx-auto my-[30px];
-}
-.toggle {
-    @apply hidden;
-}
-.foux-toggle {
-    @apply relative w-[11.25rem] h-[2.8125rem] bg-[#ddd] m-0 rounded-[30px];    
-}
-.foux-toggle:before {
-    @apply content-[""] absolute block w-[5.625rem] h-[2.8125rem] bg-primary z-[3] rounded-tl-[30px] rounded-tr-none rounded-br-none rounded-bl-[30px] left-0 top-0;
-}
-.toggle:checked ~ .foux-toggle:before {
-    @apply rounded-tl-none rounded-tr-[30px] rounded-br-[30px] rounded-bl-none border-primary left-[5.625rem];    
-}
-.toggle--label:after, .toggle--label:before {
-    @apply absolute transition-opacity duration-[0.05s] inset-y-0;
-}
-.toggle--label {
-    @apply absolute text-center leading-[2.8125rem] cursor-pointer z-[12] tracking-[0.0625rem] font-normal text-sm inset-0;
-}
-.toggle--label:before {
-    @apply content-["Monthley"] -translate-x-2/4 text-[white] opacity-100 left-1/4;
-}
-.toggle--label:after {
-    @apply content-["Annually"] absolute -translate-x-2/4 text-[white] opacity-100 left-3/4 right-0;
-}
-.toggle:checked + .toggle--label:after {
-    @apply duration-[0.05s]
-}
-
+  .search-container {
+    @apply md:w-[48.125rem] w-full block my-0 mx-auto pt-[3.75rem];
+  }
+  
+  input#search-bar {
+    @apply my-0 mx-auto w-full h-[2.8125rem] text-base border-b border-solid border-primary outline-0 rounded-none bg-transparent;
+  }
+  input#search-bar:focus {
+    @apply border-b border-solid border-midnight_text text-midnight_text;
+    transition: 0.35s ease;
+  }
+  input#search-bar:focus::-webkit-input-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+  }
+  input#search-bar:focus::-moz-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+  }
+  input#search-bar:focus:-ms-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+  }
+  .search-icon {
+    @apply relative -top-[2.1875rem] md:-right-[22.1875rem] -right-[7.1875rem];
+  }

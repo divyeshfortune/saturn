@@ -1,6 +1,10 @@
+import Blog from '@/components/Blog'
+import Footer from '@/components/Footer'
+import Frequently from '@/components/Frequently'
 import Growperfomance from '@/components/Growperfomance'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import JournyInfo from '@/components/JournyInfo'
 import PricingPackages from '@/components/PricingPackages'
 import Productvideo from '@/components/Productvideo'
 import ReviewSlider from '@/components/ReviewSlider'
@@ -15,6 +19,10 @@ const Page = () => {
       <Growperfomance/>
       <Productvideo/>
       <PricingPackages/>
+      <Frequently/>
+      <Blog/>
+      <JournyInfo/>
+      <Footer/>
     </>
   )
 }
