@@ -69,7 +69,7 @@ const PricingPackages = () => {
                   </span>
                 </span>
               </div>
-              <span className="text-3xl font-bold text-midnight_text">
+              <span className="text-3xl font-bold text-midnight_text dark:text-CeruleanBlue">
                 Basic
               </span>
               <p className="text-DeepOcean text-base pt-6 border-b border-solid border-stroke pb-5">
@@ -102,7 +102,7 @@ const PricingPackages = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span className="text-17 text-midnight_text font-medium">
+                  <span className="text-17 text-midnight_text dark:text-CrystalSky font-medium">
                     Training Intake / Requests
                   </span>
                 </li>
@@ -132,7 +132,7 @@ const PricingPackages = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span className="text-17 text-midnight_text font-medium">
+                  <span className="text-17 text-midnight_text dark:text-CrystalSky font-medium">
                     Planning Board
                   </span>
                 </li>
@@ -163,7 +163,7 @@ const PricingPackages = () => {
                     </defs>
                   </svg>
 
-                  <span className="text-17 text-midnight_text font-medium">
+                  <span className="text-17 text-midnight_text dark:text-CrystalSky font-medium">
                     Unlimited Collaborators
                   </span>
                 </li>
@@ -193,7 +193,7 @@ const PricingPackages = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span className="text-17 text-midnight_text font-medium">
+                  <span className="text-17 text-midnight_text dark:text-CrystalSky font-medium">
                     Insights and Analytics
                   </span>
                 </li>
@@ -223,7 +223,7 @@ const PricingPackages = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span className="text-17 text-midnight_text font-medium">
+                  <span className="text-17 text-midnight_text dark:text-CrystalSky font-medium">
                     Live Chat Support
                   </span>
                 </li>

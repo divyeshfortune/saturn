@@ -18,6 +18,7 @@ const Page = () => {
       <Hero/>
       <Growperfomance/>
       <Productvideo/>
+      {/* <ReviewSlider/> */}
       <PricingPackages/>
       <Frequently/>
       <Blog/>

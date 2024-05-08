@@ -90,7 +90,7 @@ const Header = () => {
                   >
                     <Link
                       href={item.href}
-                      className={`text-midnight_text dark:text-white dark:hover:text-primary text-17 font-normal lg:w-full w-fit inline-block transition-all duration-500 py-2 border-b-2 lg:border-solid border-none ${
+                      className={`text-midnight_text dark:text-CeruleanBlue dark:hover:text-primary text-17 font-normal lg:w-full w-fit inline-block transition-all duration-500 py-2 border-b-2 lg:border-solid border-none ${
                         activeItem === index
                           ? "border-primary text-primary"
                           : "border-transparent"

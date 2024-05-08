@@ -6,15 +6,15 @@ const Footer = () => {
   return (
     <footer className="bg-midnight_text relative z-[1]">
       <div className="container">
-        <div className="grid md:grid-cols-12 grid-cols-1 sm:grid-cols-8 gap-[1.875rem]">
-          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-0 border-r border-solid border-[#224767]">
+        <div className="grid md:grid-cols-12 grid-cols-1 sm:grid-cols-8 gap-[1.875rem] lg:pb-0 pb-8">
+          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-0 md:border-r border-solid border-[#224767] border-none">
             <h2 className="text-white pb-10">Ready to Get Started?</h2>
             <Link href="#" className="btn inline- hover:bg-DarkPrimary hover:shadow-none">
               Get Started
             </Link>
           </div>
 
-          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-0 border-r border-solid border-[#224767] pl-16">
+          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-0 md:border-r border-solid border-[#224767] md:pl-16 pl-0 border-none">
             <span className="text-18 font-bold text-white pb-4 inline-block">
               Support
             </span>
@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-2 pl-16">
+          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-2 md:pl-16 pl-0">
             <span className="text-18 font-bold text-white pb-4 inline-block">
               Subscribe Newsletter
             </span>

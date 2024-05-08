@@ -26,6 +26,7 @@ module.exports = {
         MistyBlue: "#A3BBD1",
         SkyMistBlue: "#AEC8DF",
         MistySky: "#C1DCFF",
+        CeruleanBlue: "#46C4FF",
       },
       screens: {
         sm: "768px",

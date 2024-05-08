@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import {frequently} from '../api/data';
+import Link from "next/link";
 
 const Frequently = () => {
   return (
@@ -17,16 +18,17 @@ const Frequently = () => {
               type="text"
               id="search-bar"
               placeholder="Search"
+              className="placeholder:dark:text-white"
             />
             </div>
           </form>
         </div>
         <div className="grid md:grid-cols-12 sm:grid-cols-4 grid-cols-1 items-center gap-[1.875rem] mt-14">
             {frequently.map((items, index) => (
-                <div key={index} className="bg-white flex items-center flex-col py-[1.8rem] col-span-2 -mx-[0.30rem] gap-4">
+                <Link href="javascript:void(0)" key={index} className="bg-white flex items-center flex-col py-[1.8rem] col-span-2 -mx-[0.30rem] gap-4">
                     <Image src={items.image} width={0} height={0} className="bg-no-repeat bg-contain w-[3.75rem] h-[3.75rem] inline-block" />
                     <span className="text-21 font-medium text-midnight_text inline-block text-center max-w-[6.625rem]">{items.title}</span>
-                </div>
+                </Link>
             ))}
         </div>
       </div>
