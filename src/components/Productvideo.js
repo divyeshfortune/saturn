@@ -29,7 +29,7 @@ const Productvideo = () => {
               quality={100}
               sizes="100vh"
             ></Image>
-            <Link href="#" className="bg-white w-[3.75rem] h-[3.875rem] absolute top-1/2 left-[48%] rounded-[2.0625rem] shadow-[0px_0px_16px_0px_rgba(0,0,0,0.75)] p-[1.3125rem]">
+              <Link href="#" className="bg-white sm:w-[3.75rem] w-12 sm:h-[3.875rem] h-12 absolute top-1/2 left-[48%] translate-x-[-15%] -translate-y-2/4 rounded-[2.0625rem] shadow-[0px_0px_16px_0px_rgba(0,0,0,0.75)] sm:p-[1.3125rem] p-[0.9rem]">
               <i className="bg-[url('/icon/play-button.svg')] bg-no-repeat w-[1.25rem] h-[1.25rem] inline-block bg-cover">
               </i>
             </Link>
