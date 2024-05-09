@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <header
       className={`header sticky bg-white top-0 z-10 ${isMenuOpen ? "menu-open" : ""} ${
-        isSticky ? "header-sticky box_shadow bg-white dark:bg-black" : ""
+        isSticky ? "header-sticky header_shadow bg-white dark:bg-black" : ""
       }`}
     >
       <div className="container">
@@ -106,7 +106,7 @@ const Header = () => {
             </div>
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="#" className="btn">
+            <Link href="#" className="btn py-3 sm:px-[1.625rem] px-[0.625rem] rounded-[0.3125rem]">
               Buy Now
             </Link>
             <span

@@ -15,7 +15,8 @@ export const businessgrow = [
   {
     icon: "/icon/track-activity.svg",
     heading: "Track activity",
-    description: "making this the first true generator on the Internet. It uses a dictionary combined with a handful"
+    description: "making this the first true on the Internet. It uses a dictionary with a handful"
+    
   },
   {
     icon: "/icon/track-growth.svg",
@@ -69,7 +70,7 @@ export const blogs = [
     lable: 'Meeting',
     title: 'The work is top-notch and I consistently outrank all my...',
     slug: 'the-work-is-top-notch-and-i-consistently-outrank-all-my',
-    timing: '1 Daya ago'
+    timing: '1 Day ago'
   },
   {
     image: '/images/blog_3.jpg',

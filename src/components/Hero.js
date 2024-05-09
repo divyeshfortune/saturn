@@ -3,19 +3,20 @@ import Pulse from "./Pulse";
 import Image from "next/image";
 import Link from "next/link";
 import {businessgrow} from "../api/data";
+import Pulsesmall from "./PulseSmall";
 
 const Hero = () => {
   return (
     <section className="bg-primary relative h-full">
       <div className="container">
-        <div className="absolute z-0 left-[37%] top-[40%] md:inline-block hidden">
+        <div className="absolute z-0 left-[31%] top-[38%] md:inline-block hidden">
           <Pulse />
         </div>
-        <div className="absolute z-0 sm:left-2/3 left-[33.666667%] -top-[4%]">
-          <Pulse />
+        <div className="absolute z-0 sm:left-2/3 left-[33.666667%] -top-[2%]">
+          <Pulsesmall/>
         </div>
-        <div className="grid md:grid-cols-12 grid-cols-1 gap-[1.875rem] items-center">
-          <div className="col-span-5 xl:-ml-[14.375rem] -ml-[0] md:-ml-[1.375rem] z-0">
+        <div className="grid md:grid-cols-12 grid-cols-1 gap-6 justify-between items-center">
+          <div className="col-span-5 xl:-ml-[16.375rem] -ml-[0] md:-ml-[1.375rem] z-0">
               <Image
                 src="/images/hero.jpg"
                 alt="Grow Performance"
@@ -51,6 +52,7 @@ const Hero = () => {
               <div key={index} className="col-span-3">
                 <div className="flex items-center gap-[1.875rem] pb-9">
                   <Image
+                    alt="Hero"
                     src={item.icon}
                     className="m_icon bg-no-repeat bg-contain"
                     width={0}

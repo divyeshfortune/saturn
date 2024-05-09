@@ -1,6 +1,6 @@
-/* Pulse Small */
+/* Pulse Ragular */
 .pulse{
-    @apply relative bg-DarkPrimary w-[3.75rem] h-[3.75rem] rounded-full;
+    @apply relative bg-DarkPrimary w-[8.125rem] h-[8.125rem] rounded-full;
 }
 .round{
     @apply absolute bg-inherit w-full h-full rounded-[100%] opacity-[0.8];
@@ -18,14 +18,39 @@
 
 @keyframes pulsing{
     100% {
-        transform: scale(6);
+        transform: scale(12);
         opacity: 0;
     }
 }
 
+/* Pulse Small */
+.pulse_small{
+  @apply relative bg-DarkPrimary w-[3.75rem] h-[3.75rem] rounded-full;
+}
+.circal_small{
+  @apply absolute bg-inherit w-full h-full rounded-[100%] opacity-[0.8];
+  animation: pulsing 4s ease-in-out infinite;
+}
+.circal_small:nth-of-type(1){
+  animation-delay: -1s;
+}
+.roucircal_smallnd:nth-of-type(2){
+  animation-delay: -2s;
+}
+.circal_small:nth-of-type(3){
+  animation-delay: -3s;
+}
+
+@keyframes pulsing{
+  100% {
+      transform: scale(5);
+      opacity: 0;
+  }
+}
+
 /* Pulse Big */
 .pulsebig{
-    @apply relative bg-[#CBEFFF] w-[9rem] h-[9.3125rem] rounded-full;
+    @apply relative bg-[#CBEFFF] w-[9.375rem] h-[9.375rem] rounded-full;
 }
 .circal{
     @apply absolute bg-inherit w-full h-full rounded-[100%] opacity-[0.8];
@@ -43,7 +68,7 @@
 
 @keyframes pulsing{
     100% {
-        transform: scale(6);
+        transform: scale(4);
         opacity: 0;
     }
 }
@@ -59,7 +84,7 @@
     @apply w-1/2 p-0 m-0 text-center cursor-pointer text-DeepOcean;
   }
   .switch-wrapper {
-    @apply absolute top-0 bottom-0 w-1/2 p-[0.15rem] z-[3];
+    @apply absolute top-0 bottom-0 w-1/2 p-[0.25rem];
     transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   }
   .switch {
@@ -104,3 +129,4 @@
   input#search-bar:focus::-webkit-input-placeholder {
     @apply transition-opacity duration-[0.45s] ease-[ease] opacity-0;
   }
+  

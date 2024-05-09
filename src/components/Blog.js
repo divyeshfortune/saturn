@@ -16,7 +16,7 @@ const Blog = () => {
         <div className="blog-list grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
           {blogs.map((post, index) => (
             <Link key={index} href={`/blog-details/${post.slug}`} className="blog-item pricing col-span-4 group">
-            <div className="blog-img max-w-full overflow-hidden relative w-full lg:h-[15.25rem] h-auto">
+            <div className="blog-img max-w-full overflow-hidden relative w-full h-auto">
               <Image
                 src={post.image}
                 alt="blog"
@@ -25,7 +25,7 @@ const Blog = () => {
                 layout="responsive"
                 quality={100}
                 sizes="100vh"
-                className="object-cover w-full h-full transition duration-500 group-hover:scale-[1.2]"
+                className="object-cover rounded-md w-full h-full transition duration-500 group-hover:scale-[1.2]"
               />
               <span className="postdate py-[0.475rem] max-w-[4.9375rem] w-full text-center bg-primary text-white absolute left-0 top-0 mt-[0.9375rem] ml-[0.9375rem] rounded-[0.25rem] text-[0.8125rem] leading-[1.0581rem] font-medium">{post.lable}</span>
             </div>
