@@ -1,11 +1,23 @@
+"use client";
 import Header from "@/components/Header";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
+import { useParams } from "next/navigation"; // Assuming you're using React Router
+import { blogs } from "@/api/data";
 
-const page = () => {
+const BlogPost = () => {
+  const { slug } = useParams();
+
+  // Find the blog post by slug
+  const post = blogs.find((post) => post.slug === slug);
+
+  if (!post) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
       <Header />
@@ -21,7 +33,7 @@ const page = () => {
                 <span className="text-16 text-white pl-7">13 Comments</span>
               </div>
               <h2 className="text-white pt-7">
-                Business from the brink of ruin by optimizing our website....
+              {post.title}
               </h2>
             </div>
             <div className="flex items-center justify-center gap-6 col-span-4">
@@ -47,7 +59,7 @@ const page = () => {
         <div className="container">
           <div>
             <Image
-              src="/images/blog-details.jpg"
+              src={post.image}
               alt="blog-details"
               width={0}
               height={0}
@@ -165,7 +177,7 @@ const page = () => {
                 />
                 <Link
                   href="#"
-                  className="btn w-full text-center inline-block hover:shadow-[inset_-10.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47]"
+                  className="btn w-full text-center inline-block hover:shadow-[inset_-10.5rem_0_0_0_#102D47,inset_10.5rem_0_0_0_#102D47]"
                 >
                   Subscribe
                 </Link>
@@ -174,10 +186,12 @@ const page = () => {
           </div>
         </div>
       </section>
-      <Blog/>
+      <div className="bg-SnowySky">
+        <Blog/>
+      </div>
       <Footer/>
     </>
   );
 };
 
-export default page;
+export default BlogPost;
