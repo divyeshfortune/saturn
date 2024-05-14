@@ -3,7 +3,7 @@ export const menuItems = [
   { name: "Features", href: "/features" },
   { name: "Pricing", href: "/pricing" },
   { name: "Blog", href: "/blogs" },
-  { name: "Contact", href: "/blogdetails" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export const businessgrow = [

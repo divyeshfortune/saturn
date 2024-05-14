@@ -129,4 +129,3 @@
   input#search-bar:focus::-webkit-input-placeholder {
     @apply transition-opacity duration-[0.45s] ease-[ease] opacity-0;
   }
-  

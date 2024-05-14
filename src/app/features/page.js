@@ -31,7 +31,7 @@ const page = () => {
     />
       <section>
         <div className="container">
-          <div className="bg-SnowySky border border-solid border-stroke rounded-3xl grid grid md:grid-cols-12 grid-cols-1 items-center gap-[1.875rem]">
+          <div className="bg-SnowySky border border-solid border-stroke rounded-3xl grid md:grid-cols-12 grid-cols-1 items-center gap-[1.875rem]">
             <div className="md:col-span-5 col-span-6 md:pl-[5.375rem] pl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <h2>Smart solutions tailored for you</h2>
               <p className="py-8 max-w-[19.6875rem]">
@@ -94,8 +94,8 @@ const page = () => {
       <section>
         <div className="container">
           <div className="text-center pb-[4.6875rem]">
-            <h2 className="pb-2" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Your bespoke service bundle</h2>
-            <p className="text-xl text-DeepOcean font-normal" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+            <h2 className="pb-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Your bespoke service bundle</h2>
+            <p className="text-xl text-DeepOcean font-normal" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               We offer you a new generation of task and project
             </p>
           </div>

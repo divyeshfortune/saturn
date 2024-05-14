@@ -59,7 +59,7 @@ const page = () => {
           </div>
           <div className="container mx-auto px-4 pt-[4.8125rem] pb-6">
             <nav
-              className="flex flex-row flex-nowrap justify-between md:justify-center items-center"
+              className="flex flex-row flex-nowrap justify-center items-center"
               aria-label="Pagination"
             >
               <Link
@@ -78,21 +78,21 @@ const page = () => {
                 </svg>
               </Link>
               <Link
-                className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-primary text-white hover:border-gray-300 pointer-events-none"
+                className="flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-primary text-white hover:border-gray-300 pointer-events-none"
                 href="#"
                 title="Page 1"
               >
                 1
               </Link>
               <Link
-                className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-midnight_text hover:border-gray-300 hover:bg-primary hover:text-white"
+                className="flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-midnight_text hover:border-gray-300 hover:bg-primary hover:text-white"
                 href="#"
                 title="Page 2"
               >
                 2
               </Link>
               <Link
-                className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-stroke bg-white text-midnight_text hover:bg-primary hover:text-white"
+                className="flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-stroke bg-white text-midnight_text hover:bg-primary hover:text-white"
                 href="#"
                 aria-current="page"
                 title="Page 3"
@@ -100,7 +100,7 @@ const page = () => {
                 3
               </Link>
               <Link
-                className="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-midnight_text hover:border-gray-300 hover:bg-primary hover:text-white"
+                className="hidden sm:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-midnight_text hover:border-gray-300 hover:bg-primary hover:text-white"
                 href="#"
                 title="Page 4"
               >
