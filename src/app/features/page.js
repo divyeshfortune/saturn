@@ -11,12 +11,13 @@ import { bundle } from "../../api/data";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const page = () => {
+export default function Page() {
   useEffect(() => {
     AOS.init({
       // Global settings for AOS
     });
   }, []);
+
   const breadcrumbLinks = [
     { href: "/", text: "Home" },
     { href: "/features", text: "Features" },
@@ -131,5 +132,3 @@ const page = () => {
     </>
   );
 };
-
-export default page;
