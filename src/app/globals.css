@@ -44,7 +44,7 @@ html {
     @apply text-24 font-bold text-midnight_text dark:text-primary;
   }
   h5{
-    @apply text-22 font-bold text-midnight_text dark:text-CrystalSky;
+    @apply text-22 font-medium text-midnight_text dark:text-CrystalSky;
   }
   .container{
     @apply w-full max-w-[73.1875rem] my-0 mx-auto py-0 sm:px-7 px-5;

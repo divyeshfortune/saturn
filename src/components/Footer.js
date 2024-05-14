@@ -6,15 +6,17 @@ const Footer = () => {
   return (
     <footer className="bg-midnight_text relative z-[1]">
       <div className="container">
-        <div className="grid md:grid-cols-12 grid-cols-1 sm:grid-cols-8 gap-[1.875rem] lg:pb-0 pb-8">
-          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-0 md:border-r md:border-solid border-[#224767] border-none">
+        <div className="grid md:grid-cols-12 grid-cols-1 sm:grid-cols-12 gap-[0] ">
+          <div className="col-span-4 sm:border-r border-b border-solid border-[#224767] flex items-center sm:border-b-0 sm:min-h-[400px] py-10 shrink-0 ">
+            <div>
             <h2 className="text-white pb-10">Ready to Get Started?</h2>
             <Link href="#" className="btn inline- hover:bg-DarkPrimary hover:shadow-none">
               Get Started
             </Link>
+            </div>
           </div>
 
-          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-0 md:border-r md:border-solid border-[#224767] md:pl-16 pl-0 border-none">
+          <div className="col-span-4 sm:flex items-center sm:min-h-[400px] py-10 justify-center shrink-0 sm:border-r border-b sm:border-b-0 border-solid border-[#224767]">
             <div className="flex flex-col">
             <span className="text-18 font-bold text-white pb-4 inline-block">
               Support
@@ -107,7 +109,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-span-4 lg:pt-20 pt-8 lg:pb-16 pb-2 md:pl-16 pl-0">
+          <div className="col-span-4 sm:flex items-center justify-end sm:min-h-[400px] py-10 shrink-0">
+            <div className="w-[75%]">
             <span className="text-18 font-bold text-white pb-4 inline-block">
               Subscribe Newsletter
             </span>
@@ -124,6 +127,7 @@ const Footer = () => {
                 Subscribe
               </button>
             </form>
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-4 md:gap-0 justify-between flex-wrap py-7 border-t border-solid border-[#224767]">

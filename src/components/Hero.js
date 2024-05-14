@@ -28,7 +28,7 @@ const Hero = () => {
               ></Image>
           </div>
           <div className="col-span-1"></div>
-          <div className="max-w-[39.125rem] col-span-6 z-[1]">
+          <div className="max-w-[39.125rem] col-span-6 z-[1]" data-aos="fade-left">
             <h1 className="">Task Management AssistantYou Gonna Love</h1>
             <div className="py-6 pb-12">
               <p className="text-CrystalSky text-xl">
@@ -49,7 +49,7 @@ const Hero = () => {
           </h2>
           <div className="grid md:grid-cols-12 sm:grid-cols-6 grid-cols-1 gap-[1.875rem]">
             {businessgrow.map((item, index) => (
-              <div key={index} className="col-span-3">
+              <div key={index} className="col-span-3" data-aos="fade-up" data-aos-delay={item.delay} data-aos-duration="1000">
                 <div className="flex items-center gap-[1.875rem] pb-9">
                   <Image
                     alt="Hero"

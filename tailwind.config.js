@@ -18,7 +18,6 @@ module.exports = {
         midnight_text: "#102D47",
         grey: "#668199",
         stroke: "#DCE9FA",
-        section:"#F8FAFC",
         SereneGray: "#ACBCCA",
         DeepOcean: "#547593",
         CrystalSky: "#D1E8FF",

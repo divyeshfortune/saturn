@@ -47,7 +47,7 @@ const Header = () => {
 
   return (
     <header
-      className={`header sticky bg-white top-0 z-10 ${isMenuOpen ? "menu-open" : ""} ${
+      className={`header sticky bg-white top-0 z-[99] ${isMenuOpen ? "menu-open" : ""} ${
         isSticky ? "header-sticky header_shadow bg-white dark:bg-black" : ""
       }`}
     >
