@@ -103,7 +103,7 @@ export default function Page() {
           <div className="grid lg:grid-cols-12 sm:grid-cols-6 grid-cols-1 gap-[1.875rem]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             {bundle.map((item, index) => (
               <div key={index} className="col-span-3">
-                <div className="grid grid-cols-3 items-center pb-9">
+                <div className="grid lg:grid-cols-3 md:grid-cols-6 grid-cols-4 items-center pb-9">
                   <div className="bg-primary w-[3.4375rem] h-[3.4375rem] rounded-xl inline-flex items-center justify-center shadow-[0_8px_15px_rgba(47,116,242,0.2)]">
                     <Image
                       src={item.icon}
