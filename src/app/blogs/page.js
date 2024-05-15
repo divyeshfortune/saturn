@@ -3,7 +3,7 @@ import HeroSub from "@/components/HeroSub";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { blogpage } from "../../api/data";
+import { blogs } from "../../api/data";
 import Footer from "@/components/Footer";
 
 const page = () => {
@@ -22,7 +22,7 @@ const page = () => {
       <section>
         <div className="container">
           <div className="blog-list grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem]">
-            {blogpage.map((post, index) => (
+            {blogs.map((post, index) => (
               <Link
                 key={index}
                 href={`/blog-details/${post.slug}`}

@@ -7,6 +7,7 @@ import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
 import { useParams } from "next/navigation"; // Assuming you're using React Router
 import { blogs } from "@/api/data";
+import Pulsesmall from "@/components/PulseSmall";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -21,8 +22,11 @@ const BlogPost = () => {
   return (
     <>
       <Header />
-      <section className="bg-primary py-[6.5rem]">
+      <section className="bg-primary py-[6.5rem] relative">
         <div className="container">
+        <div className="absolute -top-[8%] left-[63%]">
+          <Pulsesmall/>
+        </div>
           <div className="grid grid-cols-12 items-center">
             <div className="col-span-8">
               <div className="">

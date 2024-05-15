@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="absolute z-0 left-[31%] top-[38%] md:inline-block hidden">
           <Pulse />
         </div>
-        <div className="absolute z-0 sm:left-2/3 left-[33.666667%] -top-[2%]">
+        <div className="absolute z-0 sm:left-[62.666667%] left-[33.666667%] -top-[2%]">
           <Pulsesmall/>
         </div>
         <div className="grid md:grid-cols-12 grid-cols-1 gap-6 justify-between items-center">

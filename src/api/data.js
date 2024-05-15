@@ -92,79 +92,6 @@ export const blogs = [
     timing: '20-04-2022',
     delay: 600
   },
-]
-
-export const bundle = [
-  {
-    icon: '/icon/brand-communi.svg',
-    title: 'Brand Communication',
-    description: 'Sometimes by sometimes chunks as necessary making this the first true gener',
-  },
-  {
-    icon: '/icon/graphic-design.svg',
-    title: 'Graphic design',
-    description: 'Only five centuries, but also the leap into electronic typesetting remaining essentially.',
-  },
-  {
-    icon: '/icon/product-development.svg',
-    title: 'Product development',
-    description: 'Many variations of passages of Lorem Ipsum available, but the majority have suffered',
-  },
-  {
-    icon: '/icon/technology.svg',
-    title: 'Technology consulation',
-    description: 'Sometimes by sometimes chunks as necessary making this the first true gener',
-  },
-]
-
-export const team = [
-  {
-    image: '/images/team-1.jpg',
-    title: 'Darrell Steward',
-    description: 'Designation',
-  },
-  {
-    image: '/images/team-2.jpg',
-    title: 'Darrell Steward',
-    description: 'Designation',
-  },
-  {
-    image: '/images/team-3.jpg',
-    title: 'Darrell Steward',
-    description: 'Designation',
-  },
-  {
-    image: '/images/team-4.jpg',
-    title: 'Darrell Steward',
-    description: 'Designation',
-  },
-]
-
-export const blogpage = [
-  {
-    image: '/images/blog_1.jpg',
-    lable: 'Pricing',
-    title: 'Business from the brink of ruin by optimizing our website....',
-    slug: 'business-from-the-brink-of-ruin-by-optimizing-our-website',
-    timing: '16 Hours ago',
-    delay: 200
-  },
-  {
-    image: '/images/blog_2.jpg',
-    lable: 'Meeting',
-    title: 'The work is top-notch and I consistently outrank all my...',
-    slug: 'the-work-is-top-notch-and-i-consistently-outrank-all-my',
-    timing: '1 Day ago',
-    delay: 400
-  },
-  {
-    image: '/images/blog_3.jpg',
-    lable: 'Updates',
-    title: 'Grow my business through organic search and marketing...',
-    slug: 'grow-my-business-through-organic-search-and-marketing',
-    timing: '20-04-2022',
-    delay: 600
-  },
   {
     image: '/images/blog_4.jpg',
     lable: 'Pricing',
@@ -213,5 +140,50 @@ export const blogpage = [
     timing: '20-04-2022',
     delay: 600
   },
+]
 
+export const bundle = [
+  {
+    icon: '/icon/brand-communi.svg',
+    title: 'Brand Communication',
+    description: 'Sometimes by sometimes chunks as necessary making this the first true gener',
+  },
+  {
+    icon: '/icon/graphic-design.svg',
+    title: 'Graphic design',
+    description: 'Only five centuries, but also the leap into electronic typesetting remaining essentially.',
+  },
+  {
+    icon: '/icon/product-development.svg',
+    title: 'Product development',
+    description: 'Many variations of passages of Lorem Ipsum available, but the majority have suffered',
+  },
+  {
+    icon: '/icon/technology.svg',
+    title: 'Technology consulation',
+    description: 'Sometimes by sometimes chunks as necessary making this the first true gener',
+  },
+]
+
+export const team = [
+  {
+    image: '/images/team-1.jpg',
+    title: 'Darrell Steward',
+    description: 'Designation',
+  },
+  {
+    image: '/images/team-2.jpg',
+    title: 'Darrell Steward',
+    description: 'Designation',
+  },
+  {
+    image: '/images/team-3.jpg',
+    title: 'Darrell Steward',
+    description: 'Designation',
+  },
+  {
+    image: '/images/team-4.jpg',
+    title: 'Darrell Steward',
+    description: 'Designation',
+  },
 ]

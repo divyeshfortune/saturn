@@ -4,7 +4,7 @@ import Link from "next/link";
 import {blogs} from '../api/data';
 
 const Blog = () => {
-  
+  const blog = blogs.slice(0, 3);
   return (
     <section className="blog-list-scn dark:bg-black" id="blog">
       <div className="container">
@@ -15,7 +15,7 @@ const Blog = () => {
             </Link>
         </div>
         <div className="blog-list grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem]">
-          {blogs.map((post, index) => (
+          {blog.map((post, index) => (
             <Link key={index} href={`/blog-details/${post.slug}`} className="blog-item pricing col-span-4 group" data-aos="fade-up" data-aos-delay={post.delay} data-aos-duration="1000">
             <div className="blog-img max-w-full overflow-hidden relative w-full h-auto">
               <Image
