@@ -33,7 +33,7 @@ export default function Page() {
       <section>
         <div className="container">
           <div className="bg-SnowySky border border-solid border-stroke rounded-3xl grid md:grid-cols-12 grid-cols-1 items-center gap-[1.875rem]">
-            <div className="md:col-span-5 col-span-6 md:pl-[5.375rem] pl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div className="md:col-span-5 col-span-6 md:pl-[4.375rem] pl-8 md:pt-0 pt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <h2>Smart solutions tailored for you</h2>
               <p className="py-8 max-w-[19.6875rem]">
                 We help startups who want to rise above the ordinary with
@@ -42,7 +42,7 @@ export default function Page() {
               <Link href="#" className="btn inline-block mb-8">
                 Buy Now
               </Link>
-              <div className="flex items-center flex-wrap gap-[1.875rem]">
+              <div className="flex items-center flex-wrap sm:gap-[1.875rem] gap-[0.875rem]">
                 <div className="flex items-center gap-2">
                   <svg
                     width="24"
@@ -77,7 +77,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="col-span-7 pt-[2.9375rem] pb-[3.75rem] pr-10 pl-[0.80rem]">
+            <div className="col-span-7 pt-[2.9375rem] pb-[3.75rem] sm:pr-10 pr-2 pl-[0.80rem]">
               <Image
                 src="/images/organic-traffic.jpg"
                 alt="Grow Performance"

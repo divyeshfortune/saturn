@@ -7,7 +7,7 @@ const HeroSub = ({ title, description, breadcrumbLinks }) => {
   return (
     <>
       <section className="bg-primary text-center lg:py-16 py-8 relative">
-        <div className="absolute -top-[8%] left-[63%]">
+        <div className="absolute -top-[8%] md:left-[63%] left-[40%]">
           <Pulsesmall/>
         </div>
         <h2 className="text-white relative">{title}</h2>

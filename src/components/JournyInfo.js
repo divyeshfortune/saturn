@@ -11,7 +11,7 @@ const JournyInfo = () => {
           <Pulse/>
         </div>
         <div className="flex flex-wrap justify-between items-center overflow-hidden">
-          <div className="md:w-[42%] w-full md:-mb-10 mb-6 z-[1]">
+          <div className="md:w-[42%] w-full md:-mb-10 mb-0 z-[1] md:order-none order-2">
             <Image
               src="/images/journy.png"
               alt="logo"

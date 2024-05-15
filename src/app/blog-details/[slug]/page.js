@@ -24,23 +24,23 @@ const BlogPost = () => {
       <Header />
       <section className="bg-primary py-[6.5rem] relative">
         <div className="container">
-        <div className="absolute -top-[8%] left-[63%]">
+        <div className="absolute -top-[8%] md:left-[63%] left-[45%]">
           <Pulsesmall/>
         </div>
-          <div className="grid grid-cols-12 items-center">
+          <div className="grid md:grid-cols-12 grid-cols-1 items-center">
             <div className="col-span-8">
-              <div className="">
-                <span className="text-16 text-white pr-10">Trends</span>
-                <span className="text-16 text-white pr-7 border-r border-solid border-white">
+              <div className="flex flex-col sm:flex-row">
+                <span className="text-16 text-white pr-10 w-fit">Trends</span>
+                <span className="text-16 text-white pr-7 border-r border-solid border-white w-fit">
                   18 Hours ago
                 </span>
-                <span className="text-16 text-white pl-7">13 Comments</span>
+                <span className="text-16 text-white sm:pl-7 pl-0 w-fit">13 Comments</span>
               </div>
               <h2 className="text-white pt-7">
               {post.title}
               </h2>
             </div>
-            <div className="flex items-center justify-center gap-6 col-span-4">
+            <div className="flex items-center md:justify-center justify-start gap-6 col-span-4 pt-4 md:pt-0">
               <Image
                 src="/images/silicaman.png"
                 alt="Avatar"

@@ -24,20 +24,20 @@ const page = () => {
         <div className="container">
           <div className="bg-SnowySky border border-solid border-stroke rounded-3xl grid md:grid-cols-12 grid-cols-1 items-center gap-[1.875rem]">
             <div
-              className="md:col-span-5 col-span-6 md:pl-[5.375rem] pl-4"
+              className="md:col-span-5 col-span-6 md:pl-[4.375rem] pl-4 md:pt-0 pt-4"
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              <h2>Our mission. Drive business growth</h2>
-              <p className="py-8 max-w-[19.6875rem]">
+              <h2>Our mission. Drive business growth</h2>
+              <p className="md:py-8 py-4 max-w-[19.6875rem]">
                 We help startups who want to rise above the ordinary with
                 extraordinary messaging that speaks to their audience.
               </p>
               <Link href="#" className="btn inline-block mb-8">
                 Buy Now
               </Link>
-              <div className="flex items-center flex-wrap gap-[1.875rem]">
+              <div className="flex items-center flex-wrap sm:gap-[1.875rem] gap-[0.875rem]">
                 <div className="flex items-center gap-2">
                   <svg
                     width="24"
@@ -76,7 +76,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-7 col-span-6 pl-[0.80rem]">
+            <div className="md:col-span-7 col-span-6 md:pl-[0.80rem] pl-0">
               <Image
                 src="/images/about-busines.jpg"
                 alt="Grow Performance"
