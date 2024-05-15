@@ -59,7 +59,7 @@ const PricingPackages = () => {
             </p>
           </div>
           <div className="col-span-1"></div>
-          <div className="col-span-4 mb-8 lg:mb-0 shadow-[0_0px_30px_rgba(24,23,23,0.1)] rounded-[0.3125rem]">
+          <div className="col-span-4 mb-8 lg:mb-0 shadow-[0_0px_30px_rgba(24,23,23,0.1)] rounded-[0.3125rem] dark:bg-DarkPrimary">
             <div className="flex flex-col p-6 sm:p-8">
               <div className="space-y-2 pb-2">
                 <span className="text-40 font-bold text-primary">

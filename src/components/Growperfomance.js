@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const Growperfomance = () => {
   return (
-    <section className="">
+    <section className="dark:bg-black">
       <div className="container">
         <div className="grid md:grid-cols-12 grid-cols-1 items-center md:gap-0 gap-6">
           <div className="md:col-span-5 col-span-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">

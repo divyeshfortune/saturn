@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { menuItems } from "../api/data";
+import ToggleSwitch from "./ToggleSwitch";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -105,6 +106,9 @@ const Header = () => {
               </ul>
             </div>
           </nav>
+          <div className="md:inline-block hidden">
+            <ToggleSwitch/>
+          </div>
           <div className="flex items-center gap-4">
             <Link href="#" className="btn py-3 sm:px-[1.625rem] px-[0.625rem] rounded-[0.3125rem]">
               Buy Now

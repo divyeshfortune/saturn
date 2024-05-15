@@ -9,7 +9,6 @@ import JournyInfo from '@/components/JournyInfo'
 import PricingPackages from '@/components/PricingPackages'
 import Productvideo from '@/components/Productvideo'
 import ReviewSlider from '@/components/ReviewSlider'
-import React from 'react'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

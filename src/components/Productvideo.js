@@ -33,10 +33,10 @@ const Productvideo = () => {
         <div className="">
           <div className="flex flex-wrap items-center justify-between">
             <div className="">
-              <h2 className="max-w-[21.25rem]" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">How our product is working ?</h2>
+              <h2 className="max-w-[21.25rem]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">How our product is working ?</h2>
             </div>
             <div>
-              <p className="max-w-[34.3125rem] text-DeepOcean text-18 lg:pb-0 pb-4" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+              <p className="max-w-[34.3125rem] text-DeepOcean text-18 lg:pb-0 pb-4" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
                 Sometimes by accident, sometimes chunks as necessary making this
                 the first true generator on the Internet. recently with desktop
                 publishing software like Aldus PageMaker
