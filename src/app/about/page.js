@@ -103,16 +103,18 @@ const page = () => {
           <div className="grid md:grid-cols-12 sm:grid-cols-6 grid-cols-1 gap-[1.875rem]">
             {team.map((items, index) => (    
                 <div key={index} className="col-span-3 overflow-hidden">
+                  <div className="overflow-hidden mb-9 rounded-lg">
                     <Image
                         alt="Team"
                         src={items.image}
-                        className="mb-9 rounded-lg hover:scale-[1.1] hover:cursor-pointer transition duration-500 ease-in-out"
+                        className="hover:scale-[1.1] hover:cursor-pointer transition duration-500 ease-in-out"
                         width={0}
                         height={0}
                         layout="responsive"
                         quality={100}
                         sizes="100vh"
                     ></Image>
+                  </div>
                     <h3 className="text-midnight_text pb-2">{items.title}</h3>
                     <p className="text-18 font-medium text-DeepOcean">{items.description}</p>
                 </div>
