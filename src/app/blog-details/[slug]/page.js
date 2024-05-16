@@ -59,7 +59,7 @@ const BlogPost = () => {
           </div>
         </div>
       </section>
-      <section className="">
+      <section className="dark:bg-darkmode">
         <div className="container">
           <div>
             <Image
@@ -113,7 +113,7 @@ const BlogPost = () => {
                 also the leap into electronic typesetting, remaining essentially
                 unchanged. It was popularised in the
               </p>
-              <p className="md:text-28 text-xl font-normal text-midnight_text py-7 border-l-[0.1875rem] border-solid border-primary pl-8">
+              <p className="md:text-28 text-xl font-normal text-midnight_text dark:text-white py-7 border-l-[0.1875rem] border-solid border-primary pl-8">
                 We are a dedicated team of passionate product
                 managers,developers, UX/UI designers, QA engineers experts
                 helping businesses from new startups
@@ -127,7 +127,7 @@ const BlogPost = () => {
               </p>
               <div className="flex gap-5 py-7 border-t border-b border-solid border-stroke">
                 <div>
-                  <p className="text-22 font-medium text-midnight_text">Tags</p>
+                  <p className="text-22 font-medium text-midnight_text dark:text-white">Tags</p>
                 </div>
                 <div className="flex sm:flex-row flex-col md:items-center items-start gap-[0.625rem]">
                   <span className="inline-block rounded-md bg-lightblue py-1 px-[1.5938rem] text-base font-medium text-primary leading-[1.6875rem]">
@@ -142,7 +142,7 @@ const BlogPost = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-4 col-span-10 bg-white shadow-[0px_20px_80px_0px_#68758D26] px-10 rounded-lg md:h-[42.5%] h-full md:pb-0 pb-4">
+            <div className="md:col-span-4 col-span-10 bg-white shadow-[0px_20px_80px_0px_#68758D26] px-10 rounded-lg md:h-[42.5%] h-full md:pb-0 pb-4 dark:bg-darklight">
               <span className="text-24 font-medium text-midnight_text inline-block py-6">
                 Share
               </span>
@@ -170,14 +170,14 @@ const BlogPost = () => {
                 </Link>
               </div>
               <div className="mt-6">
-                <span className="text-24 font-medium text-midnight_text inline-block py-5">
+                <span className="text-24 font-medium text-midnight_text dark:text-white inline-block py-5">
                   Join our newsletter
                 </span>
                 <input
                   type="text"
                   name="email address"
                   placeholder="Email address"
-                  className="py-3 px-4 !border !border-solid !border-[#C0D5FB] !mb-3"
+                  className="py-3 px-4 !border !border-solid !border-[#C0D5FB] !mb-3 dark:bg-darklight dark:text-white"
                 />
                 <Link
                   href="#"
@@ -190,7 +190,7 @@ const BlogPost = () => {
           </div>
         </div>
       </section>
-      <div className="bg-SnowySky">
+      <div className="bg-SnowySky dark:bg-darklight">
         <Blog/>
       </div>
       <Footer/>
