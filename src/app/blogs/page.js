@@ -19,7 +19,7 @@ const page = () => {
         description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends."
         breadcrumbLinks={breadcrumbLinks}
       />
-      <section>
+      <section className="dark:bg-darkmode">
         <div className="container">
           <div className="blog-list grid md:grid-cols-12 sm:grid-cols-8 grid-cols-1 gap-[1.875rem]">
             {blogs.map((post, index) => (

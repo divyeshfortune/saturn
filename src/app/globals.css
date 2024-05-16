@@ -32,10 +32,10 @@ html {
     @apply block outline-none text-base font-normal text-midnight_text m-0 rounded-[0.375rem] w-full placeholder:text-[#668199];
   }
   h1{
-    @apply md:text-51 text-28 font-bold text-white dark:text-primary;
+    @apply md:text-51 text-28 font-bold text-white dark:text-white;
   }
   h2{
-    @apply md:text-40 text-24 font-bold text-midnight_text dark:text-primary;
+    @apply md:text-40 text-24 font-bold text-midnight_text dark:text-white;
   }
   h3{
     @apply md:text-28 text-18 font-bold text-white dark:text-primary;

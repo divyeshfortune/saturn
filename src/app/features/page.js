@@ -30,12 +30,12 @@ export default function Page() {
         description="Learn more about us and our services."
         breadcrumbLinks={breadcrumbLinks} // Passing breadcrumbLinks as prop
     />
-      <section>
+      <section className="dark:bg-darkmode">
         <div className="container">
-          <div className="bg-SnowySky border border-solid border-stroke rounded-3xl grid md:grid-cols-12 grid-cols-1 items-center gap-[1.875rem]">
+          <div className="bg-SnowySky dark:bg-darklight dark:border-none border border-solid border-stroke rounded-3xl grid md:grid-cols-12 grid-cols-1 items-center gap-[1.875rem]">
             <div className="md:col-span-5 col-span-6 md:pl-[4.375rem] pl-8 md:pt-0 pt-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <h2>Smart solutions tailored for you</h2>
-              <p className="py-8 max-w-[19.6875rem]">
+              <p className="py-8 max-w-[19.6875rem] dark:text-DeepOcean">
                 We help startups who want to rise above the ordinary with
                 extraordinary messaging that speaks to their audience.
               </p>
@@ -92,7 +92,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="dark:bg-darkmode">
         <div className="container">
           <div className="text-center pb-[4.6875rem]">
             <h2 className="pb-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Your bespoke service bundle</h2>

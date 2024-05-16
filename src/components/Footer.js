@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-12 grid-cols-1 sm:grid-cols-12 gap-[0] ">
           <div className="col-span-4 sm:border-r border-b border-solid border-[#224767] flex items-center sm:border-b-0 sm:min-h-[400px] py-10 shrink-0 ">
             <div>
-            <h2 className="text-white pb-10">Ready to Get Started?</h2>
+            <h2 className="text-white pb-10 dark:text-white">Ready to Get Started?</h2>
             <Link href="#" className="btn inline- hover:bg-DarkPrimary hover:shadow-none">
               Get Started
             </Link>

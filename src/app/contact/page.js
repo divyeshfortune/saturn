@@ -18,7 +18,7 @@ const page = () => {
         description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends."
         breadcrumbLinks={breadcrumbLinks}
       />
-      <section>
+      <section className="dark:bg-darkmode">
         <div className="container">
           <div className="flex md:flex-row flex-col items-center sm:gap-28 gap-8">
             <div className="flex sm:flex-row flex-col items-start sm:gap-[2.0625rem] gap-[1.0625rem]">
@@ -26,7 +26,7 @@ const page = () => {
                 <i className="bg-[url('/icon/email.svg')] bg-no-repeat bg-contain w-[2.125rem] h-[2.125rem] inline-block"></i>
               </div>
               <div>
-                <span className="text-midnight_text text-xl font-bold">
+                <span className="text-midnight_text dark:text-white text-xl font-bold">
                   Email US
                 </span>
                 <p className="text-DeepOcean font-normal text-xl max-w-[20.875rem] pt-3 pb-7">
@@ -57,7 +57,7 @@ const page = () => {
                 <i className="bg-[url('/icon/Career.svg')] bg-no-repeat bg-contain w-[2.125rem] h-[2.125rem] inline-block"></i>
               </div>
               <div>
-                <span className="text-midnight_text text-xl font-bold">
+                <span className="text-midnight_text dark:text-white text-xl font-bold">
                   Careers
                 </span>
                 <p className="text-DeepOcean font-normal text-xl max-w-[20.875rem] pt-3 pb-7">
@@ -88,9 +88,9 @@ const page = () => {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938779.7831767448!2d71.05098621661072!3d23.20271516446136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e82dd003ff749%3A0x359e803f537cea25!2sGANESH%20GLORY%2C%20Gota%2C%20Ahmedabad%2C%20Gujarat%20382481!5e0!3m2!1sen!2sin!4v1715676641521!5m2!1sen!2sin" width="1114" height="477" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="rounded-lg w-full"></iframe>
           </div>
         </div>
-        <div className="border-b border-solid border-stroke"></div>
+        <div className="border-b border-solid border-stroke dark:border-none"></div>
       </section>
-      <section>
+      <section className="dark:bg-darkmode">
         <div className="container">
             <div className="grid md:grid-cols-12 grid-cols-1 gap-[1.875rem]">
                 <div className="col-span-6">

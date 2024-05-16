@@ -28,7 +28,7 @@ const Productvideo = () => {
   }, [isModalOpen]);
 
   return (
-    <section className="bg-secondary pb-0 relative z-[1]">
+    <section className="bg-secondary pb-0 relative z-[1] dark:bg-darklight">
       <div className="container">
         <div className="">
           <div className="flex flex-wrap items-center justify-between">

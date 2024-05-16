@@ -6,7 +6,7 @@ import {blogs} from '../api/data';
 const Blog = () => {
   const blog = blogs.slice(0, 3);
   return (
-    <section className="blog-list-scn dark:bg-black" id="blog">
+    <section className="blog-list-scn dark:bg-darkmode" id="blog">
       <div className="container">
         <div className="blog_heading flex items-baseline justify-between flex-wrap">
             <h2 className="sm:mb-[2.75rem] mb-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Recent blog</h2>

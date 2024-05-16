@@ -29,6 +29,9 @@ module.exports = {
         lightblue: "#D6E4FF",
         SkyBlueMist: "#C0D5FB",
         IceBlue: "#DBE9F6",
+        darkmode: "#111928",
+        darklight: "#1F2A37",
+        InkBlue: "#1F2A37",
       },
       screens: {
         sm: "768px",

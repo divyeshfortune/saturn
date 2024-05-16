@@ -20,9 +20,9 @@ const page = () => {
         description="With a passion for technology and a commitment to excellence, we empower businesses to thrive in the digital landscape."
         breadcrumbLinks={breadcrumbLinks}
       />
-      <section>
+      <section className="dark:bg-darkmode">
         <div className="container">
-          <div className="bg-SnowySky border border-solid border-stroke rounded-3xl grid md:grid-cols-12 grid-cols-1 items-center gap-[1.875rem]">
+          <div className="bg-SnowySky dark:bg-darklight dark:border-none border border-solid border-stroke rounded-3xl grid md:grid-cols-12 grid-cols-1 items-center gap-[1.875rem]">
             <div
               className="md:col-span-5 col-span-6 md:pl-[4.375rem] pl-4 md:pt-0 pt-4"
               data-aos="fade-up"
@@ -30,7 +30,7 @@ const page = () => {
               data-aos-duration="1000"
             >
               <h2>Our mission. Drive business growth</h2>
-              <p className="md:py-8 py-4 max-w-[19.6875rem]">
+              <p className="md:py-8 py-4 max-w-[19.6875rem] dark:text-DeepOcean">
                 We help startups who want to rise above the ordinary with
                 extraordinary messaging that speaks to their audience.
               </p>
@@ -92,7 +92,7 @@ const page = () => {
         </div>
       </section>
 
-      <section>
+      <section className="dark:bg-darkmode">
         <div className="container">
           <div className="text-center mb-[3.75rem]">
             <h2>Our Team</h2>

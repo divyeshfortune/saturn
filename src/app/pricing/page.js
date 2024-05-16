@@ -18,10 +18,10 @@ const page = () => {
         description="Whether you're an individual, a small team, or a growing enterprise, we have a plan that aligns perfectly with your goals."
         breadcrumbLinks={breadcrumbLinks}
       />
-      <section>
+      <section className='dark:bg-darkmode'>
         <div className='container'>
         <div className="grid md:grid-cols-12 grid-cols-1 items-center md:-mx-4 mx-0 gap-[1.875rem] relative">
-          <div className="col-span-4 mb-8 lg:mb-0 shadow-[0_0px_30px_rgba(24,23,23,0.1)] rounded-[0.3125rem]">
+          <div className="col-span-4 mb-8 lg:mb-0 shadow-[0_0px_30px_rgba(24,23,23,0.1)] rounded-[0.3125rem] dark:bg-darklight">
             <div className="flex flex-col p-6 sm:p-8">
               <div className="space-y-2 pb-2">
                 <span className="text-40 font-bold text-primary">
@@ -198,7 +198,7 @@ const page = () => {
               </Link>
             </div>
           </div>
-          <div className="col-span-4 mb-8 lg:mb-0 shadow-[0_0px_30px_rgba(24,23,23,0.1)] rounded-[0.3125rem]">
+          <div className="col-span-4 mb-8 lg:mb-0 shadow-[0_0px_30px_rgba(24,23,23,0.1)] rounded-[0.3125rem] dark:bg-darklight">
             <div className="flex flex-col p-6 sm:p-8">
               <div className="space-y-2 pb-2">
                 <span className="text-40 font-bold text-primary">
