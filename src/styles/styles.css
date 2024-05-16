@@ -75,7 +75,7 @@
 
   /* Toggle Switch */
  .switches-container {
-    @apply w-[16rem] relative flex p-0 border border-solid border-stroke leading-[3rem] rounded-full;
+    @apply w-[16rem] relative flex p-0 border border-solid border-stroke dark:border-darkborder leading-[3rem] rounded-full;
   }
   .switches-container input {
     @apply invisible absolute top-0;

@@ -10,7 +10,7 @@ const Blog = () => {
       <div className="container">
         <div className="blog_heading flex items-baseline justify-between flex-wrap">
             <h2 className="sm:mb-[2.75rem] mb-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Recent blog</h2>
-            <Link href="/blogs" className="flex items-center gap-3 text-17 text-midnight_text dark:text-[#46C4FF] font-medium hover:text-primary sm:pb-0 pb-3 transition duration-500 group">View More
+            <Link href="/blogs" className="flex items-center gap-3 text-17 text-midnight_text dark:text-[#46C4FF] hover:dark:text-white font-medium hover:text-primary sm:pb-0 pb-3 transition duration-500 group">View More
                 <i className="m_blog_arrow bg-[url('/icon/blog-arrow.svg')] bg-no-repeat inline-block w-[1.0625rem] h-3 bg-cover group-hover:bg-[url('/icon/blog-arrow-hover.svg')]"></i>
             </Link>
         </div>

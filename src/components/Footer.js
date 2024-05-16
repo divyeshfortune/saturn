@@ -121,7 +121,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Email*"
-                className="p-[0.9375rem] text-base border-0 rounded-md outline-0 w-[calc(100%_-_137px)] flex"
+                className="p-[0.9375rem] text-base border-0 rounded-md outline-0 w-[calc(100%_-_137px)] flex dark:bg-midnight_text dark:rounded-none dark:text-white dark:border-solid dark:border dark:border-darkborder dark:rounded-s-md"
               />
               <button type="submit" className="btn newsletter-btn p-[0.625rem] text-17 font-medium bg-primary text-white border-none cursor-pointer rounded-[0px_6px_6px_0px] outline-0 text-center w-[8.5625rem] hover:bg-DarkPrimary hover:shadow-none">
                 Subscribe

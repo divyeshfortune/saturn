@@ -63,7 +63,7 @@ const page = () => {
               aria-label="Pagination"
             >
               <Link
-                className="flex w-10 h-10 mr-1 text-xl justify-center items-center rounded-full border border-[#D1E1FD] bg-white text-primary hover:border-stroke hover:bg-primary hover:text-white"
+                className="flex w-10 h-10 mr-1 text-xl justify-center items-center rounded-full border border-[#D1E1FD] dark:border-darkborder bg-white dark:bg-darkmode text-primary hover:border-stroke hover:bg-primary dark:hover:bg-DarkPrimary hover:text-white"
                 href="#"
                 title="Previous Page"
               >
@@ -78,21 +78,21 @@ const page = () => {
                 </svg>
               </Link>
               <Link
-                className="flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-primary text-white hover:border-gray-300 pointer-events-none"
+                className="flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 dark:border-darkborder bg-primary dark:bg-DarkPrimary text-white hover:border-gray-300 pointer-events-none"
                 href="#"
                 title="Page 1"
               >
                 1
               </Link>
               <Link
-                className="flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-midnight_text hover:border-gray-300 hover:bg-primary hover:text-white"
+                className="flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 dark:border-darkborder bg-white dark:bg-darklight dark:text-white text-midnight_text hover:border-gray-300 hover:bg-primary hover:text-white dark:hover:bg-DarkPrimary"
                 href="#"
                 title="Page 2"
               >
                 2
               </Link>
               <Link
-                className="flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-stroke bg-white text-midnight_text hover:bg-primary hover:text-white"
+                className="flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-stroke dark:border-darkborder bg-white dark:bg-darklight dark:text-white text-midnight_text hover:bg-primary hover:text-white dark:hover:bg-DarkPrimary"
                 href="#"
                 aria-current="page"
                 title="Page 3"
@@ -100,14 +100,14 @@ const page = () => {
                 3
               </Link>
               <Link
-                className="hidden sm:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-midnight_text hover:border-gray-300 hover:bg-primary hover:text-white"
+                className="hidden sm:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 dark:border-darkborder bg-white dark:bg-darklight dark:text-white text-midnight_text hover:border-gray-300 hover:bg-primary dark:hover:bg-DarkPrimary hover:text-white"
                 href="#"
                 title="Page 4"
               >
                 4
               </Link>
               <Link
-                className="flex w-10 h-10 ml-1 justify-center items-center rounded-full border border-gray-200 bg-white text-primary hover:border-gray-300 hover:bg-primary hover:text-white"
+                className="flex w-10 h-10 ml-1 justify-center items-center rounded-full border border-gray-200 dark:border-darkborder bg-white dark:bg-darkmode text-primary hover:border-gray-300 hover:bg-primary hover:text-white dark:hover:bg-DarkPrimary"
                 href="#"
                 title="Next Page"
               >

@@ -3,39 +3,39 @@ import { useState, useEffect } from 'react';
 
 const ToggleSwitch = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
-
+  
     useEffect(() => {
-        const darkSwitchTheme = localStorage.getItem("darkthemeMode");
-        const lightSwitchTheme = localStorage.getItem("lightthemeMode");
-        
-        if (darkSwitchTheme === "darkMode") {
-            setIsDarkMode(true);
-        } else if (lightSwitchTheme === "lightMode") {
-            setIsDarkMode(false);
-        }
+      const darkSwitchTheme = localStorage.getItem("darkthemeMode");
+      const lightSwitchTheme = localStorage.getItem("lightthemeMode");
+  
+      if (darkSwitchTheme === "darkMode") {
+        setIsDarkMode(true);
+      } else if (lightSwitchTheme === "lightMode") {
+        setIsDarkMode(false);
+      }
     }, []);
-
+  
     const toggleMode = () => {
-        setIsDarkMode(!isDarkMode);
-        if (!isDarkMode) {
-            themeDarkmode();
-        } else {
-            themeLightmode();
-        }
+      setIsDarkMode(!isDarkMode);
+      if (!isDarkMode) {
+        themeDarkmode();
+      } else {
+        themeLightmode();
+      }
     };
-
+  
     const themeDarkmode = () => {
-        document.querySelector('html').classList.remove('light');
-        document.querySelector('html').classList.add('dark');
-        localStorage.setItem("darkthemeMode", "darkMode");
-        localStorage.setItem("lightthemeMode", "");
+      document.querySelector('html').classList.remove('light');
+      document.querySelector('html').classList.add('dark');
+      localStorage.setItem("darkthemeMode", "darkMode");
+      localStorage.setItem("lightthemeMode", "");
     };
-
+  
     const themeLightmode = () => {
-        document.querySelector('html').classList.remove('dark');
-        document.querySelector('html').classList.add('light');
-        localStorage.setItem("lightthemeMode", "lightMode");
-        localStorage.setItem("darkthemeMode", "");
+      document.querySelector('html').classList.remove('dark');
+      document.querySelector('html').classList.add('light');
+      localStorage.setItem("lightthemeMode", "lightMode");
+      localStorage.setItem("darkthemeMode", "");
     };
 
 
@@ -45,7 +45,8 @@ const ToggleSwitch = () => {
             onClick={toggleMode}
             className="rounded-full p-2"
         >
-            {isDarkMode ? (
+           
+            {isDarkMode  ?   (
                  <svg
                  xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 50 50"

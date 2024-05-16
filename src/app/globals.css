@@ -63,17 +63,17 @@ html {
   }
   /* Default Button CSS Start */
   .btn {
-    @apply relative border-0 z-[1] py-3 px-4 text-17 font-normal rounded-lg cursor-pointer no-underline bg-primary text-white before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47];
+    @apply relative border-0 z-[1] py-3 px-4 text-17 font-normal rounded-lg cursor-pointer no-underline bg-primary text-white before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] dark:hover:shadow-[inset_-7.5rem_0_0_0_#12429A,inset_7.5rem_0_0_0_#12429A];
     transition: 0.5s;
   }
   /* White Button CSS Start */
   .btn_white {
-    @apply relative border-0 z-[1] py-[0.85rem] px-[2.3rem] text-17 font-normal rounded-[0.3125rem] cursor-pointer no-underline bg-white text-primary before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] hover:text-white;
+    @apply relative border-0 z-[1] py-[0.85rem] px-[2.3rem] text-17 font-normal rounded-[0.3125rem] cursor-pointer no-underline bg-white text-primary before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] hover:text-white dark:hover:shadow-[inset_-7.5rem_0_0_0_#12429A,inset_7.5rem_0_0_0_#12429A];
     transition: 0.5s;
   }
   /* transparent Button CSS Start */
   .btn_trans {
-    @apply relative z-[1] py-[0.8rem] px-[2.3rem] text-17 font-normal rounded-[0.3125rem] cursor-pointer no-underline border-2 border-solid border-white text-white before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] hover:text-white hover:border-transparent;
+    @apply relative z-[1] py-[0.8rem] px-[2.3rem] text-17 font-normal rounded-[0.3125rem] cursor-pointer no-underline border-2 border-solid border-white text-white before:content-[''] before:absolute before:-z-[1] after:content-[''] after:absolute after:-z-[1] hover:shadow-[inset_-7.5rem_0_0_0_#102D47,inset_7.5rem_0_0_0_#102D47] hover:text-white hover:border-transparent dark:hover:shadow-[inset_-7.5rem_0_0_0_#12429A,inset_7.5rem_0_0_0_#12429A];
     transition: 0.5s;
   }
 }

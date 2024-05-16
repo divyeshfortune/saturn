@@ -32,6 +32,7 @@ module.exports = {
         darkmode: "#111928",
         darklight: "#1F2A37",
         InkBlue: "#1F2A37",
+        darkborder: "#374151",
       },
       screens: {
         sm: "768px",

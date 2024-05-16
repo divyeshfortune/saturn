@@ -72,7 +72,7 @@ const PricingPackages = () => {
               <span className="text-3xl font-bold text-midnight_text dark:text-CeruleanBlue">
                 Basic
               </span>
-              <p className="text-DeepOcean text-base pt-6 border-b border-solid border-stroke pb-5">
+              <p className="text-DeepOcean text-base pt-6 border-b border-solid border-stroke dark:border-darkborder pb-5">
                 Sometimes chunks as necessary making this the first true
               </p>
               <ul className="flex-1 space-y-5 pt-6">

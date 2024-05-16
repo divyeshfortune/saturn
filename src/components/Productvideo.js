@@ -78,10 +78,10 @@ const Productvideo = () => {
             {isModalOpen && (
               // Render your YouTube popup modal here
               <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-                <div className="bg-white rounded-lg sm:m-0 m-4">
-                  <div className="overlay flex items-center justify-between border-b border-solid border-stroke p-5 z-50">
+                <div className="bg-white dark:bg-darkmode rounded-lg sm:m-0 m-4">
+                  <div className="overlay flex items-center justify-between border-b border-solid border-stroke p-5 z-50 dark:border-darkborder">
                     <h3 className="text-midnight_text">Video</h3>
-                    <button onClick={closeModal} className="bg-[url('/icon/closed.svg')] bg-no-repeat bg-contain w-5 h-5 inline-block"></button>
+                    <button onClick={closeModal} className="bg-[url('/icon/closed.svg')] bg-no-repeat bg-contain w-5 h-5 inline-block dark:invert"></button>
                   </div>
                   <iframe
                     height="400"
