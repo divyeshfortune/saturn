@@ -59,7 +59,7 @@ const Hero = () => {
                     height={0}
                   >
                   </Image>
-                  <h3 className="max-w-[7.875rem]">{item.heading}</h3>
+                  <h3 className="max-w-[7.875rem] dark:text-white">{item.heading}</h3>
                 </div>
                 <p className="text-base font-normal text-CrystalSky max-w-[16.875rem]">
                   {item.description}
