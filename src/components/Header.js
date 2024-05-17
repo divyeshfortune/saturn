@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 import { menuItems } from "../api/data";
 import ToggleSwitch from "./ToggleSwitch";
 
@@ -9,7 +10,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-
+  const {theme, setThemes}=useTheme();
   const [activeItem, setActiveItem] = useState(null); // State to manage active item
 
   const handleItemClick = (index) => {
@@ -60,9 +61,11 @@ const Header = () => {
               onClick={closeMenu}
             ></span>
           )}
+
           <Link href="/" className="sm:w-[10rem] w-[7.5rem] block">
+            
             <Image
-              src="/icon/logo.svg"
+              src={theme=="dark" ? "/icon/logo-white.svg" : '/icon/logo.svg'}
               alt="logo"
               width={0}
               height={0}

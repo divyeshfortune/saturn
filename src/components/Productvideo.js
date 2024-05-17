@@ -54,7 +54,7 @@ const Productvideo = () => {
               sizes="100vh"
             ></Image>
             <Link
-              href="javascript:void(0)"
+              href="/"
               className="bg-white group sm:w-[3.75rem] w-12 sm:h-[3.875rem] h-12 absolute top-1/2 left-[48%] translate-x-[-15%] -translate-y-2/4 rounded-[2.0625rem] shadow-[0_0px_30px_rgba(24,23,23,0.1)] flex items-center justify-center"
               onClick={openModal}
             >
