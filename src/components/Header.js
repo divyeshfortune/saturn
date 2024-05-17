@@ -10,9 +10,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const {theme, setThemes}=useTheme();
+   const [mounted, setMounted] = useState(false)
+  const {theme,resolvedTheme , setThemes}=useTheme();
   const [activeItem, setActiveItem] = useState(null); // State to manage active item
-
+ // useEffect only runs on the client, so now we can safely show the UI
+  
+  
   const handleItemClick = (index) => {
     setActiveItem(index); // Set active item on click
     closeMenu(); // Assuming closeMenu is a function to close the menu
@@ -22,7 +25,7 @@ const Header = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 1279);
     };
-
+setMounted(true)
     const handleScroll = () => {
       setIsSticky(window.scrollY > 0);
     };
@@ -46,7 +49,9 @@ const Header = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-
+if (!mounted) {
+    return null
+  }
   return (
     <header
       className={`header sticky bg-white dark:bg-darkmode top-0 z-[99] ${isMenuOpen ? "menu-open" : ""} ${
@@ -65,7 +70,7 @@ const Header = () => {
           <Link href="/" className="sm:w-[10rem] w-[7.5rem] block">
             
             <Image
-              src={theme=="dark" ? "/icon/logo-white.svg" : '/icon/logo.svg'}
+              src={resolvedTheme ==="dark" ? "/icon/logo-white.svg" : '/icon/logo.svg'}
               alt="logo"
               width={0}
               height={0}
